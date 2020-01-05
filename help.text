@@ -1,0 +1,11 @@
+
+
+cd m00dbot-master
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+python create_db.py database.json
+
+
+TG_TOKEN="1032345958:AAFCQldDARD0SvUL6vj4P2lyf1XWF3kkSaU" DB_NAME="database.json" python bot.py
